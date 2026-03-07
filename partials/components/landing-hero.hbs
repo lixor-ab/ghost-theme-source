@@ -1,0 +1,9 @@
+{{#get "pages" filter="slug:landing-hero"}}
+    {{#foreach pages}}
+        <section class="gh-outer landing-hero">
+            <div class="gh-inner">
+                {{{html}}}
+            </div>
+        </section>
+    {{/foreach}}
+{{/get}}

@@ -1,4 +1,4 @@
-<footer class="gh-footer{{#match @custom.header_and_footer_color "Accent color"}} has-accent-color{{/match}} gh-outer">
+<footer class="gh-footer{{#match @custom.header_and_footer_color "Contrast color"}} has-contrast-color{{/match}}{{#match @custom.header_and_footer_color "Accent color"}} has-accent-color{{/match}} gh-outer">
     <div class="gh-footer-inner gh-inner">
 
         <div class="gh-footer-bar">
@@ -12,9 +12,7 @@
             <nav class="gh-footer-menu">
                 {{navigation type="secondary"}}
             </nav>
-            <div class="gh-footer-copyright">
-                {{{t "Powered by {ghostlink}" ghostlink="<a href=\"https://ghost.org/\" target=\"_blank\" rel=\"noopener\">Ghost</a>"}}}
-            </div>
+            {{! dropped ghost link }}
         </div>
 
         {{#if @site.members_enabled}}
