@@ -2198,7 +2198,8 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-article-image {
-    grid-column: wide;
+    /* keeping them aligned with text */
+    /* grid-column: wide; */
     margin-top: 40px;
 }
 

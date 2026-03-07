@@ -62,6 +62,7 @@
 
 {{/post}}
 
+{{!-- Possibly filter on tags instead? --}}
 {{#if @custom.show_related_articles}}
     {{#get "posts" include="authors" filter="id:-{{post.id}}" limit="4" as |next|}}
         {{#if next}}

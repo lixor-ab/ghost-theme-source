@@ -15,19 +15,6 @@
             {{! dropped ghost link }}
         </div>
 
-        {{#if @site.members_enabled}}
-            {{#unless @member}}
-                <section class="gh-footer-signup">
-                    <h2 class="gh-footer-signup-header is-title">
-                        {{#if @custom.signup_heading}}{{@custom.signup_heading}}{{else}}{{@site.title}}{{/if}}
-                    </h2>
-                    <p class="gh-footer-signup-subhead is-body">
-                        {{#if @custom.signup_subheading}}{{@custom.signup_subheading}}{{else}}{{@site.description}}{{/if}}
-                    </p>
-                    {{> "email-subscription" email_field_id="footer-email"}}
-                </section>
-            {{/unless}}
-        {{/if}}
 
     </div>
 </footer>
