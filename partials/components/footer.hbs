@@ -2,18 +2,29 @@
     <div class="gh-footer-inner gh-inner">
 
         <div class="gh-footer-bar">
-            <span class="gh-footer-logo is-title">
+            {{!-- <span class="gh-footer-logo is-title">
                 {{#if @site.logo}}
                     <img src="{{@site.logo}}" alt="{{@site.title}}">
                 {{else}}
                     {{@site.title}}
                 {{/if}}
+            </span> --}}
+
+            <span>
+                {{!-- spacer for now... --}}
             </span>
             <nav class="gh-footer-menu">
                 {{navigation type="secondary"}}
             </nav>
             {{! dropped ghost link }}
+
         </div>
+
+        {{#if @custom.footer_info_text}}
+            <section class="gh-footer-info">
+                <p>{{@custom.footer_info_text}}</p>
+            </section>
+        {{/if}}
 
 
     </div>

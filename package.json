@@ -200,6 +200,10 @@
                 "type": "boolean",
                 "default": true,
                 "group": "post"
+            },
+            "footer_info_text": {
+                "type": "text",
+                "description": "Defaults to empty"
             }
         }
     },
