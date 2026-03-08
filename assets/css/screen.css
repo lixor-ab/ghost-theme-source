@@ -1993,12 +1993,18 @@ em {
 
 @media (max-width: 767px) {
     .gh-container.is-list .gh-card-link {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
     }
 
     .gh-container.is-list .gh-card-image {
-        width: 100%;
+        width: 96px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .gh-container.is-list .gh-card-excerpt {
+        display: none;
     }
 }
 
