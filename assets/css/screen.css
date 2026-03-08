@@ -2206,6 +2206,8 @@ em {
 
 .gh-article {
     --container-width: 1120px;
+    /* override - fix iPhone double tap to zoom when margins are "too wide" + it's the same as home */
+    --container-gap: max(4vmin, 20px);
 
     word-break: break-word;
 }
