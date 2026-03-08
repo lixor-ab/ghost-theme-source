@@ -1628,7 +1628,7 @@ Search                         LOGO                    Login Subscribe
     letter-spacing: -0.015em;
 }
 
-.landing-hero {
+.hero-signup {
     --color-secondary-text: rgba(255, 255, 255, 0.52);
     background-color: var(--lixor-near-black);
     color: var(--color-secondary-text);
@@ -1636,27 +1636,27 @@ Search                         LOGO                    Login Subscribe
     padding-block-end: 64px;
 }
 
-.landing-hero :is(h1, h2, h3) {
+.hero-signup :is(h1, h2, h3) {
     color: var(--lixor-white);
 }
 
-.landing-hero p {
+.hero-signup p {
     margin-top: 12px;
 }
 
-.landing-hero .gh-inner {
+.hero-signup .gh-inner {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     column-gap: var(--grid-gap);
 }
 
-.landing-hero .gh-inner > * {
+.hero-signup .gh-inner > * {
     grid-column: 3 / span 10;
 }
 
 
 @media (max-width: 1199px) {
-    .landing-hero .gh-inner > * {
+    .hero-signup .gh-inner > * {
         grid-column: 1 / span 12;
     }
 
@@ -1664,12 +1664,12 @@ Search                         LOGO                    Login Subscribe
 }
 
 @media (max-width: 991px) {
-    .landing-hero .gh-inner {
+    .hero-signup .gh-inner {
         display: block;
     }
 }
 
-.landing-hero h1 {
+.hero-signup h1 {
     font-size: 4.8rem;
 }
 
@@ -1678,7 +1678,7 @@ em {
 }
 
 
-.landing-hero .caption {
+.hero-signup .caption {
     font-size: 1.25rem;
     color: var(--color-secondary-text);
 }

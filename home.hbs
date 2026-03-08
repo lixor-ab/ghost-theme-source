@@ -3,13 +3,12 @@
 
 {{> "components/header" headerStyle=@custom.header_style}}
 
-{{> "components/landing-hero"}}
+{{> "components/hero-signup"}}
 
 {{#match @custom.header_style "!=" "Highlight"}}
     {{> "components/featured" showFeatured=@custom.show_featured_posts limit=4}}
 {{/match}}
 
-{{!-- using landing-hero instead --}}
 {{!-- {{> "components/cta"}} --}}
 
 {{> "components/post-list" feed="home" postFeedStyle=@custom.post_feed_style showTitle=false showSidebar=@custom.show_publication_info_sidebar}}
