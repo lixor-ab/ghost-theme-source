@@ -181,6 +181,11 @@
                 "default": true,
                 "group": "homepage"
             },
+            "show_reading_time": {
+                "type": "boolean",
+                "default": true,
+                "group": "homepage"
+            },
             "show_publication_info_sidebar": {
                 "type": "boolean",
                 "default": false,

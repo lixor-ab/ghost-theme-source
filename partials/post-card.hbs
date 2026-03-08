@@ -40,6 +40,9 @@
                 {{/if}}
                 {{#if @custom.show_publish_date}}
                     <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMM YYYY"}}</time>
+                {{/if}}
+                {{#if @custom.show_reading_time}}
+                        <span class="gh-card-reading-time">{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</span>
                 {{/if}}<!--
          --></footer>
         </div>
