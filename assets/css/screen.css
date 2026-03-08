@@ -449,8 +449,10 @@ body[class*=" gh-font-heading"]:not(.gh-font-heading-fira-sans):not(.gh-font-hea
 }
 
 .gh-outer {
-    padding: 0 max(4vmin, 20px);
+    padding-left: max(4vmin, 20px, env(safe-area-inset-left));
+    padding-right: max(4vmin, 20px, env(safe-area-inset-right));
 }
+
 
 .gh-outer .gh-outer {
     padding: 0;
