@@ -1124,7 +1124,9 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-card-link:hover .gh-card-title {
-    opacity: 0.8;
+    text-decoration: underline;
+    text-decoration-color: var(--lixor-lavender);
+    text-underline-offset: 3px;
 }
 
 .gh-card-excerpt {
