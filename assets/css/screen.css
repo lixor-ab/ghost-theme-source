@@ -1832,7 +1832,7 @@ Search                         LOGO                    Login Subscribe
     font-size: 4.8rem;
 }
 
-em {
+.hero-signup h1 em {
     color: var(--lixor-pink);
 }
 
