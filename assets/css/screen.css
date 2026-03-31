@@ -80,6 +80,7 @@ production stylesheet in assets/built/screen.css
     --lixor-ink-ghost: #777779;
     --lixor-near-black: #1A1A1A;
     --lixor-white: #FDFAF5;
+    --lixor-cream-soft: #F4EFDD;
     --lixor-pink: #EB5478;
     --lixor-lavender: #B8A0F0;
     --lixor-lavender-light: #E3DAFC;
@@ -117,6 +118,85 @@ production stylesheet in assets/built/screen.css
     color: #FDFAF5;
 }
 
+
+/* Phosphor Icons — phi alias for brand system compatibility */
+.phi {
+    font-family: "Phosphor-Light" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.phi-books::before     { content: "\e758"; }
+.phi-lightbulb::before { content: "\e2dc"; }
+.phi-info::before      { content: "\e2ce"; }
+.phi-warning::before   { content: "\e4e0"; }
+.phi-envelope::before  { content: "\e218"; }
+.phi-star::before      { content: "\e46a"; }
+.phi-clock::before     { content: "\e19a"; }
+.phi-chalkboard::before { content: "\e5fc"; }
+
+/* Eyebrow label */
+.eyebrow {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--lixor-ink-ghost);
+    margin-bottom: 6px;
+}
+
+:is(.gh-navigation, .gh-footer, .hero-signup) .eyebrow {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+/* Lixor callout cards */
+.lixor-callout-card {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    background: var(--lixor-cream-soft);
+    border-radius: 8px;
+    padding: 28px 32px;
+    margin: 32px 0;
+}
+
+.lixor-callout-card .phi {
+    font-size: 64px;
+    color: var(--lixor-pink);
+    flex-shrink: 0;
+}
+
+
+.lixor-callout-content {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: var(--color-primary-text);
+}
+
+.lixor-callout-content ul {
+    margin-top: 8px;
+    padding-left: 1.2em;
+}
+
+.lixor-callout-content li {
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.lixor-callout-card a {
+    color: var(--color-primary-text);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--lixor-lavender-deep);
+    text-underline-offset: 3px;
+}
 
 /* Kit embed form — static HTML, styled here */
 .hero-kit-embed .formkit-input {
@@ -203,6 +283,83 @@ production stylesheet in assets/built/screen.css
     margin: 0 0 8px;
     color: var(--lixor-pink);
     font-size: 1.4rem;
+}
+
+/* Kit inline embed — light background (page context) */
+.page-kit-embed .formkit-form {
+    max-width: 700px;
+}
+
+.page-kit-embed .formkit-fields {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
+.page-kit-embed .formkit-field {
+    flex: 1 1 auto;
+    margin-bottom: 0;
+}
+
+.page-kit-embed .formkit-input {
+    background: var(--lixor-white);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    color: var(--lixor-ink);
+    font-family: var(--font-sans);
+    font-size: 1.6rem;
+    padding: 12px 16px;
+    width: 100%;
+    transition: border-color 200ms ease;
+}
+
+.page-kit-embed .formkit-input::placeholder {
+    color: var(--lixor-ink-ghost);
+}
+
+.page-kit-embed .formkit-input:focus {
+    outline: none;
+    border-color: var(--lixor-lavender);
+}
+
+.page-kit-embed .formkit-submit {
+    background-color: var(--lixor-lavender);
+    border: none;
+    border-radius: 6px;
+    color: var(--lixor-ink);
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 12px 24px;
+    position: relative;
+    transition: background-color 200ms ease;
+    flex: 0 0 auto;
+    margin-bottom: 0;
+}
+
+.page-kit-embed .formkit-submit:hover {
+    background-color: var(--lixor-lavender-deep);
+    color: var(--lixor-white);
+}
+
+.page-kit-embed .formkit-alert-error {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px;
+    color: var(--lixor-pink);
+    font-size: 1.4rem;
+}
+
+@media (max-width: 500px) {
+    .page-kit-embed .formkit-fields {
+        flex-wrap: wrap;
+    }
+    .page-kit-embed .formkit-field,
+    .page-kit-embed .formkit-submit {
+        flex: 1 0 100%;
+        margin-bottom: 8px;
+    }
 }
 
 /* 2. Fonts
